@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="Back()">
+        <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Búsqueda de contactos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ingrese el dato con el que desea buscar el contacto</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+            <ion-item>
+              <ion-label position="floating">Email
+                :</ion-label>
+              <ion-input type="mail"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col size="12">
+            <ion-item>
+              <ion-label position="floating">Link en Facebook
+                :</ion-label>
+              <ion-input type="url"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col size="12">
+            <ion-item>
+              <ion-label position="floating">Telefono
+                :</ion-label>
+              <ion-input type="tel"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col size="12">
+            <ion-item>
+              <ion-label position="floating">Cédula
+                :</ion-label>
+              <ion-input type="number"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="full">Buscar</ion-button>
+
+  
+</ion-content>
